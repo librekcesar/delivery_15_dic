@@ -25,7 +25,7 @@
      <script src="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.js"></script>  <!--enlace para llamar el plugin del buscador de coordenadas-->
      <script src="cuadri_wgs84_cdmx_numpoints3.js"></script>
      <script src="buffer_delivery_wgs84.js"></script>
-     <script src="centroides_cuadri.js"></script>
+     <script src="centroides_cuadri3.js"></script>
      
 	 
 <!--Objeto Div que incluye la apariencia del marco del mapa-->
@@ -157,7 +157,7 @@ var buferrs = L.geoJSON(buffers, {
 }).addTo(map);
 
 //////codigo con etiquetas
-  var geojsonLayer = L.geoJSON(centro2, {
+  var geojsonLayer = L.geoJSON(centro3, {
     onEachFeature: function (feature, layer) {
         // Agregar etiquetas permanentes a cada punto
         var label = L.divIcon({ className: 'custom-label', html: feature.properties.id });
