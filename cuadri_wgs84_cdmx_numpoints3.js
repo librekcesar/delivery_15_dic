@@ -1140,6 +1140,6 @@ function getColor(d) {
 	                  '#FFFB9E';
 }
 
-for(var i in cuadri2.features)
-cuadri2.features[i].properties.color = getColor( cuadri2.features[i].properties.NUMPOINTS );
+for(var i in cuadri3.features)
+cuadri2.features[i].properties.color = getColor( cuadri3.features[i].properties.NUMPOINTS );
 
